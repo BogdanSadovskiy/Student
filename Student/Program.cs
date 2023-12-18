@@ -15,6 +15,10 @@ class program
             Console.WriteLine("Select student - 2");
             Console.WriteLine("Exit ----------- e");
             string menu = Console.ReadLine();
+            if (menu == "e" || menu == "E")
+            {
+                break;
+            }
             if (menu == "1")
             {
                 Console.Clear();
@@ -49,7 +53,9 @@ class program
                     Console.WriteLine("\tID: " + student_.ID+"\n");
                     Console.WriteLine("Update - 1");
                     Console.WriteLine("Remove - 2");
+                    Console.WriteLine("ECS ---- e");
                     menu = Console.ReadLine();
+                    if (menu == "e" || menu == "E") { continue; }
                     if (menu == "1")
                     {
                         Console.Write("Input new Name: ");
